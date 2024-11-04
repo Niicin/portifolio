@@ -1,0 +1,669 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=VT323&display=swap');
+@keyframes opacidadeSobre {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes trocar {
+    from{
+        transform: translate(1000px,0);
+    }
+    to{
+        transform: translate(0,0);
+    }
+}
+
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+main{
+    height: 115vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(unnamed\ \(4\).png);
+    z-index: -1;
+    transition: 0.5s;
+}
+nav{
+    height: 200px;
+    z-index: 10;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-size: 35px;
+    padding-top: 10px;
+}
+nav button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 35px;
+    cursor:grab;
+}
+.nome h1{
+font-family: "Orbitron", sans-serif ;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;   
+  width: 1250px;
+}
+.nome{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    color: #00CED1;
+    font-size: 30px;
+
+  
+  font-family: "Orbitron", sans-serif ;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+.pai{
+    position: absolute;
+    top: 400px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: #00CED1;
+    height: 200px;
+}
+.pai div{
+    height: 200px;
+}
+.pai div img{
+    height: 200px;
+}
+.css{
+    transform: translate(0,-50px);
+    height: 250px !important;
+}
+.txt1{
+    color: #00CED1;
+    position: absolute;
+    left: 180px;
+    top: 360px;
+    font-size: 30px;
+}
+.txt3{
+    color: #00CED1;
+    position: absolute;
+    left: 1090px;
+    top: 360px;
+    font-size: 30px;
+}
+.txt2{
+    color: #00CED1;
+    position: absolute;
+    left: 620px;
+    top: 300px;
+    font-size: 40px;
+}
+.japa{
+    color: #FF5EAA;
+    font-size: 70px;
+    position: absolute;
+    top: 580px;
+    left: 250px;
+}
+section{
+    background-color: #2E003E;
+    height: 100vh;
+    width: 100%;
+   
+    position: relative;
+}
+.mostra{
+
+}
+.sobremim{
+    color: #00CED1;
+    font-size: 80px;
+    transform: translate(550px,50px);
+    width: 400px;
+}
+.japa2{
+    width: 1px;
+    font-size: 30px;
+    color: #FF5EAA ;
+    padding-left: 10px;
+    padding-top: 40px;
+}
+.txtMeu{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 200px;
+    top: 250px;
+}
+.txtMeu.dark1::after{
+    background-color:#2E003E;
+}
+.txtMeu::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    background-color:#00CED1 ;
+    height: 190px;
+    width: 2px;
+    border-top: 10PX;
+    border-bottom: 10px;
+}
+.txtConhecimentos{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 850px;
+    top: 250px;
+}
+.txtConhecimentos::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    background-color: #00CED1;
+    height: 190px;
+    width: 2px;
+    border-top: 10PX;
+    border-bottom: 10px;
+}
+.txtConhecimentos.dark1::after{
+    background-color: #2E003E;
+}
+.txtNunca{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 300px;
+    top: 500px;
+}
+.txtNunca::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    background-color: #00CED1;
+    height: 70px;
+    width: 2px;
+    border-top: 10PX;
+    border-bottom: 10px;
+}
+.txtNunca.dark1::after{
+    background-color: #2E003E;
+}
+section:nth-of-type(2) div h1 {
+    color: #00CED1;
+    font-size: 80px;
+    transform: translate(470px,10px);
+    width: 500px;
+}
+section:nth-child(3){
+    background: linear-gradient(to top, black 7%, #2E003E 55%);
+    
+}
+.animatrocar{
+    animation: trocar 2s  forwards;
+}
+.bntGit button{
+    height: 50px;
+    padding: 5px;
+    width: 100px;
+    font-size: 25px;
+    transform: translate(650px,-100px);
+    border-radius: 30px;
+    color: white;
+    background-color: transparent;
+    border: solid 3px #00CED1;
+    transition: 0.5s;
+}
+.bntGit button:hover{
+    opacity: 0.5;
+}
+
+footer{
+    height: 80vh;
+    width: 100%;
+    background: linear-gradient(to top,  #000000 3%, #2E003E 55%, #000000 100%);
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+footer div:nth-child(1){
+    position: absolute;
+    left: 10px;
+}
+footer h1{
+    color:#00CED1;
+    font-size: 80px;
+    transform: translate(550px,20px);
+}
+.contatos{
+    color: white;
+    font-size: 30px;
+    transform: translate(0px,200px);
+    height: 300px;
+}
+.contatos1{
+    position: absolute;
+    left: 1px;
+    top: 30px;
+}
+
+
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+.trocar{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+.dark{
+    background: none !important;
+    background-color: #7FC1C2 !important;
+}
+.darkContatos{
+    background-color: #55D9DB;
+    background: linear-gradient(to top, #00FBFF 50%, #7FC1C2 90%);
+}
+.darkh1{
+    color: #2E003E !important;
+}
+
+footer div button:hover{
+    opacity: 0.5;
+}
+#bnt{
+    background-color: black;
+    color: black;
+}
+.fundo{
+    background-image: url(unnamed\ \(4\).png);
+}
+
+
+
+.caixa {
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.5s; /* Transição suave para a opacidade */
+}
+
+.mostrar {
+    opacity: 1; /* Torna visível quando a classe é adicionada */
+}
+
+.trocarr {
+    animation: opacidadeSobre 1s forwards; 
+}
+
+@keyframes animacao {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    margin-left: 200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+@media (max-width:450px){
+    nav button{
+        font-size: 23px;
+    }
+    .trocar{
+        top: 70px;
+    }
+    .nome h1{
+        font-size: 40px;
+        width: 400px;
+    }
+    .nome{
+        left: 20px;
+    }
+    .pai div img{
+        height: 100px;
+    }
+    .css{
+        height: 150px !important;
+    }
+    main{
+        height: 100vh;
+    }
+    .txt1{
+        font-size: 20px;
+        left: 40px !important;
+        top: 370px;
+    }
+    .txt2{
+        left: 185px !important;
+        font-size: 25px;
+        top: 320px;
+    }
+    .txt3{
+        left: 345px !important;
+        font-size: 20px;
+        top: 370px;
+    }
+    .japa{
+        width: 300px !important;
+        font-size: 25px !important;
+        left: 60px !important;
+    }
+    .sobremim{
+        transform: translate(150px,10px) !important;
+        font-size: 50px;
+        width: 200px;
+    }
+    .japa2{
+        font-size: 40px !important;
+    }
+    .txtMeu{
+        top: 100px !important;
+        left: 120px !important;
+        width: 100px !important;
+        font-size: 20px !important;
+        
+    }
+    .txtMeu::after{
+        height: 330px !important;
+    }
+    .txtConhecimentos{
+        font-size: 20px !important;
+        top: 100px  !important;
+
+        left: 280px  !important;
+
+        width: 100px  !important;
+
+    }
+    .txtConhecimentos::after{
+        height: 170px !important;
+    }
+    .txtNunca{
+        left: 120px !important;
+        font-size: 20px !important;
+        width: 250px !important;
+        top: 500px !important;
+    }
+    section:nth-of-type(2) div h1{
+        transform: translate(120px,20px) !important;
+        font-size: 40px !important;
+    }
+    .bntGit{
+        transform: translate(-650px,0px) !important;
+    }
+    footer h1{
+        transform: translate(200px,20px) !important;
+        font-size: 40px !important;
+    }
+    .contatos{
+        transform: translate(100px,300px) !important;
+        height: 200px !important;
+        width: 100% !important;
+    }
+    .contatos h1{
+        font-size: 25px  !important;
+
+    }
+    .contatos h4{
+        font-size: 20px !important; 
+        width: 100px !important;
+    }
+    .japa2{
+        font-size: 30px !important;
+    }
+    .cntE{
+        transform: translate(200px,100px) !important;
+    }
+    .cntT{
+        transform: translate(60px,250px) !important;
+    }
+    .cntG{
+        transform: translate(-80px,400px) !important;
+        height: 50px !important;
+    }
+    #openModalBtn{
+        position: absolute;
+        left: 180px !important;
+    }
+    .modal-content{
+        left: -500px !important;
+        width: 400px !important;
+    }
+
+}
+
+
+
+@media(max-width:1920px){
+    .txt1{
+        top: 568px;
+        left: 280px;
+    }
+    .txt2{
+        top: 500px;
+        left: 920px;
+    }
+    .txt3{
+        top: 568px;
+        left: 1580px;
+    }
+    .japa{
+        top: 900px;
+        left: 500px;
+    }
+    .pai{
+        top: 600px;
+    }
+    .sobremim{
+        transform: translate(750px,20px);
+    }
+    .japa2{
+        font-size: 50px;
+    }
+    .txtMeu{
+        left:500px;
+    }
+    .txtConhecimentos{
+        left: 1200px;
+    }
+    .txtNunca{
+        left: 500px;
+    }
+    section:nth-of-type(2) div h1 {
+        transform: translate(650px,20px);
+    }
+    .bntGit button{
+        position: absolute;
+        left: 200px;
+    }
+    footer h1 {
+        transform: translate(750px,20px);
+    }
+}
+
+
+
+
+#openModalBtn {
+    position: absolute;
+    left: 80vh;
+    top: 50vh;
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.modal {
+    display: none; /* Esconde o modal por padrão */
+    position: fixed; /* Fixa o modal na tela */
+    z-index: 1; /* Fica acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total da tela */
+    height: 100%; /* Altura total da tela */
+    overflow: auto; /* Habilita rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto; /* Centraliza o modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 500px; /* Largura do modal */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor do modal */
+    position: absolute; /* Para centralizar verticalmente */
+    transform: translate(125%, 100%); 
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+label {
+    display: block; /* Faz o label ocupar toda a largura */
+    margin: 10px 0 5px; /* Margem para espaçamento */
+}
+
+input[type="email"],
+textarea {
+    width: 100%; /* Largura total do input e textarea */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaçamento abaixo */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007BFF; /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão */
+}}
